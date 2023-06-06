@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Kalam:wght@300;400&family=Montserrat:wght@100;300;400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+html {
+    height: 100vh;
+}
+body {
+    background: linear-gradient(to right, #9f3939, #b7504f, #cf6665, #e77e7d, #ff9595);
+    height: 100vh !important;
+
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+
+    max-width: 1024px;
+    min-width: 375px;
+
+    margin: auto;
+
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.title {
+    line-height: 46px;
+}
+@media only screen and (min-width: 760px) {
+    .rock {
+        top: 201px !important;
+        right: -9px !important;
+        width: 452px !important;
+    }
+    .shadow {
+        bottom: -8px !important;
+        right: 162px !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .twitter-button {
+        margin-left: 24px !important;
+    }
+    .fa {
+        padding: 12px 16px !important;
+    }
+    .shadow {
+        bottom: -38px !important;
+        right: 82px !important;
+
+        animation: shadowMobile 8s ease-in-out 0s infinite normal forwards !important;
+    }
+    .rock {
+        top: 423px !important;
+        right: -17px !important;
+        width: 308px !important;
+
+        animation: up-down 8s ease-in-out 0s infinite normal forwards !important;
+    }
+    .white-space {
+        transform: scale(0.6) !important;
+
+        top: 340px !important;
+        right: -146px !important;
+        width: 525px !important;
+    }
+    .birds {
+        top: 245px !important;
+        right: -181px !important;
+    }
+    .content {
+        margin-top: 40px !important;
+        padding: 20px !important;
+    }
+    .cloud-2 {
+        display: none !important;
+    }
+    .title {
+        font-size: 32px !important;
+        line-height: 34px !important;
+    }
+    .description {
+        width: 310px !important;
+        font-size: 14px !important;
+    }
+    .tech-stack {
+        display: grid !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        grid-column-gap: 0 !important;
+        grid-row-gap: 0 !important;
+
+        padding: 12px !important;
+
+        gap: 10px !important;
+    }
+    .navigation {
+        padding: 12px 20px !important;
+    }
+}
+.cloud-1 {
+    top: -30px;
+    right: 4px;
+
+    position: absolute;
+    width: 300px;
+}
+.cloud-2 {
+    top: 108px;
+    right: 319px;
+
+    position: absolute;
+    width: 220px;
+}
+.description {
+    margin-top: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    width: 350px;
+}
+.birds {
+    position: absolute;
+    top: 43px;
+    right: -148px;
+    z-index: -1;
+    transform: scale(0.6);
+}
+
+.rock {
+    position: absolute;
+    width: 620px;
+    top: 206px;
+    right: -105px;
+    animation: up-down 8s ease-in-out 0s infinite normal forwards ;
+}
+.white-space {
+    position: absolute;
+    top: 266px;
+    right: -68px;
+    width: 563px;
+
+    opacity: 0.65;
+}
+.content {
+    margin-top: 40px;
+    padding: 24px 40px;
+}
+.tech {
+    width: 30px;
+}
+.tech-stack {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+.navigation {
+    padding: 24px 40px;
+}
+.shadow {
+    position: absolute;
+    bottom: 110px;
+    right: 148px;
+
+    opacity: 0.8;
+
+    animation: shadowDesktop 8s ease-in-out 0s infinite normal forwards ;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shadowMobile {
+    0% {
+        transform: scale(0.6);
+        width: 140px;
+        opacity: 0.65;
+    }
+
+    50% {
+        transform: scale(0.7);
+        width: 140px;
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(0.6);
+        width: 140px;
+        opacity: 0.65;
+    }
+}
+
+@keyframes shadowDesktop {
+    0% {
+        transform: scale(1);
+        width: 140px;
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.4);
+        width: 140px;
+    }
+
+    100% {
+        transform: scale(1);
+        width: 140px;
+        opacity: 0.7;
+    }
+}
+
+.cloud-1 {
+    animation: left-right 42s ease-in-out 0s infinite normal forwards ;
+}
+.cloud-2 {
+    animation: left-right 28s ease 0s infinite normal forwards ;
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.fa {
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+
+    border-radius: 6px;
+}
+
+.twitter-button > a > span {
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+}
+
+button:focus {outline:0;}
+button {
+    border: none;
+    border-radius: 6px;
+}
+
+.twitter-button {
+ margin-left: 40px;
+ margin-top: 10px;
+}
